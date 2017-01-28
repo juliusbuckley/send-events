@@ -74,6 +74,6 @@ Start server for testing:
 npm test
 ```
 
-## APIs used
+## API used
 >Documentation for:
 [Amplitude](https://amplitude.zendesk.com/hc/en-us/articles/204771828 "Amplitude")
