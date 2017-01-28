@@ -11,7 +11,7 @@ const postEvent = eventData => {
   const apiUrl = 'https://api.amplitude.com/httpapi?';
   const data = {
     api_key: process.env.AMPLITUDE_API_KEY,
-    event: eventData
+    event: [eventData]
   };
   axios.post(apiUrl, qs.stringify(data))
     .then(data => { console.log('event sent!'); })
