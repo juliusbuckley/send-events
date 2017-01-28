@@ -9,7 +9,7 @@ const postEvents = (req, res) => {
     event: JSON.stringify([eventData])
   };
   axios.post(apiUrl, qs.stringify(data))
-    .then((data) => { res.send('event sent!'); })
+    .then(data => { res.send('event sent!'); })
     .catch(error => { 
       if (error.response) {
         console.log('Data:', error.response.data);
