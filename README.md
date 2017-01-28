@@ -15,8 +15,8 @@
 
 # Technology Stack
 
- 1. Node/Express
- 2. Bootstrap
+ * Node/Express
+ * Bootstrap
 
 ## Installation
 
