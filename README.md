@@ -3,6 +3,12 @@
 ## What is send-events?
  > send events to Amplitude account
  
+## Use
+send-events can be executed through 1. accessing GET /events or 2. in the gui
+1. GET /events
+2. click "Send events to amplitude" 
+ * ![send-events button](./send-events.png "send-events button png")
+ 
 ## Installation steps
 
 #### Environment dependencies
