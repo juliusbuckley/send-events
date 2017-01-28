@@ -3,7 +3,7 @@ import qs from 'querystring';
 import fs from 'fs';
 import readline from 'readline';
 // SEND POST REQUEST TO AMPLITUDE API
-const postEvent = (eventData) => {
+const postEvent = eventData => {
   // CHANGE KEYS TO BE COMPATIBLE WITH AMPLITUDE REQUIRED ARGS
   eventData = eventData.replace('event', 'event_type');
   eventData = eventData.replace('userId', 'user_id');
@@ -14,10 +14,10 @@ const postEvent = (eventData) => {
     event: eventData
   };
   axios.post(apiUrl, qs.stringify(data))
-    .then((data) => {
+    .then(data => {
       console.log('event sent!');
     })
-    .catch((err) => { console.log(data); });
+    .catch(err => { console.log(data); });
 };
 // READ events.txt
 const readEvents = (req, res) => {
