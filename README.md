@@ -74,7 +74,7 @@ npm start
 
 Confirm routes are working properly and returing Status Code 200
 
-Start server for testing: 
+Start server for testing (Make sure server is not running prior to test): 
 ```sh
 # run test script
 npm test
