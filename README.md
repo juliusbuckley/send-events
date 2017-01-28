@@ -3,13 +3,22 @@
 ## What is send-events?
  > send events to Amplitude account
  
-## Use
-There are 2 ways to send events:
+# Table of Contents
 
-1. HTTP request to GET /events
-2. click "Send events to amplitude" button on homepage
+* [send-events](#send-events)
+* [Technology Stack](#technology-stack)
+* [Installation](#installation)
+* [Operation](#operation)
+* [Send Events to Amplitude](#send-events-to-amplitude)
+* [Testing](#testing)
+* [Amplitude API](#amplitude-api)
 
-## Installation steps
+# Technology Stack
+
+ 1. Node/Express
+ 2. Bootstrap
+
+## Installation
 
 #### Environment dependencies
 Install node on Ubuntu server (Assumption: Ubuntu 16.04.1 x64 distribution):
@@ -45,7 +54,7 @@ Install project dependencies:
 npm install
 ```
 
-## Running the Application
+## Operation
 
 #### Local development
 
@@ -68,6 +77,12 @@ Transpile server folder and start app:
 npm start
 ```
 
+## Send Events to Amplitude
+There are 2 ways to send events:
+
+1. HTTP request GET /events
+2. click "Send events to amplitude" button on homepage
+
 ## Testing
 
 ### Route testing
@@ -80,6 +95,6 @@ Start server for testing (Make sure server is not running prior to test):
 npm test
 ```
 
-## API used
+## Amplitude API
 >Documentation for:
 [Amplitude](https://amplitude.zendesk.com/hc/en-us/articles/204771828 "Amplitude")
