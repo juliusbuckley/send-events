@@ -1,7 +1,8 @@
 # send-events
 
 ## What is send-events?
->send events to Amplitude account
+ > send events to Amplitude account
+ 
 ## Installation steps
 
 #### Environment dependencies
@@ -75,4 +76,4 @@ npm test
 
 ## APIs used
 >Documentation for:
-[Amplitude](hhttps://amplitude.zendesk.com/hc/en-us/articles/204771828 "Amplitude")
+[Amplitude](https://amplitude.zendesk.com/hc/en-us/articles/204771828 "Amplitude")
