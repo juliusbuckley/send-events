@@ -9,9 +9,16 @@ const postEvents = (req, res) => {
     event: JSON.stringify([eventData])
   };
   axios.post(apiUrl, qs.stringify(data))
-    .then((data) => {
-      res.send('event sent!');
-    })
-    .catch((err) => { console.error(`Error: ${err.response.data}`); });
+    .then((data) => { res.send('event sent!'); })
+    .catch(error => { 
+      if (error.response) {
+        console.log('Data:', error.response.data);
+        console.log('Status:', error.response.status);
+        console.log('Headers:', error.response.headers);
+      } else {
+        console.log('Message:', error.message);
+      }
+      console.log('Config:', error.config);
+    });
 };
 export default postEvents;

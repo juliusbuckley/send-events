@@ -14,19 +14,24 @@ const postEvent = eventData => {
     event: eventData
   };
   axios.post(apiUrl, qs.stringify(data))
-    .then(data => {
-      console.log('event sent!');
-    })
-    .catch(err => { console.log(data); });
+    .then(data => { console.log('event sent!'); })
+    .catch(error => { 
+      if (error.response) {
+        console.log('Data:', error.response.data);
+        console.log('Status:', error.response.status);
+        console.log('Headers:', error.response.headers);
+      } else {
+        console.log('Message:', error.message);
+      }
+      console.log('Config:', error.config);
+    });
 };
 // READ events.txt
 const readEvents = (req, res) => {
   const lineReader = readline.createInterface({
     input: fs.createReadStream('events.txt')
   });
-  lineReader.on('line', line => {
-    postEvent(line);
-  });
+  lineReader.on('line', line => { postEvent(line); });
   res.send('Events posting...');
 };
 export { readEvents, postEvent };
