@@ -1,7 +1,7 @@
 # send-events
 
 ## What is send-events?
- > send events to Amplitude account
+ > read JSON encoded events and send to Amplitude account
  
 # Table of Contents
 
