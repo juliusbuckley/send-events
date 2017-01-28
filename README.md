@@ -7,9 +7,8 @@
 There are 2 ways to send events:
 
 1. HTTP request to GET /events
-2. click "Send events to amplitude" button 
-![send-events button](./send-events.png "send-events button png")
- 
+2. click "Send events to amplitude" button on homepage
+
 ## Installation steps
 
 #### Environment dependencies
